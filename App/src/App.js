@@ -1,24 +1,24 @@
-import React from 'react'
-import { View, StyleSheet } from 'react-native'
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
 
-import CompPadrao, { Comp1, Comp2 } from './Components/Multiplos'
-import Primeiro from './Components/Primeiro'
+import Comp, { Comp2, Comp3 } from './Components/Multiplos';
+import Primeiro from './Components/Primeiro';
 
-const App = () => (
-  <View style={styles.App}>
-    <CompPadrao />
-    <Comp1 />
-    <Comp2 />
-    <Primeiro />
-  </View>
-);
+export default function App() { 
+  return (
+    <View style={styles.container}>
+      <Comp />
+      <Comp2 />
+      <Comp3 />
+      <Primeiro />
+    </View>
+  );
+}
 
 const styles = StyleSheet.create({
-  App: {
-    flexGrow: 1,
-    justifyContent: "center",
-    alignItems: "center"
-  }
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 });
-
-export default App;
