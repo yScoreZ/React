@@ -1,11 +1,18 @@
 import React, {use} from 'react'
-import {Text} from 'react-native'
+import {Text,Button} from 'react-native'
 import estilo from '../estilo'
 
-export default props =>{
+export default (inicial = 0, passo = 1) =>{
+    const[numero, setNumero] = useState(inicial)
+    const inc = () => setNumero(numero+passo)
+    const dec = () => setNumero(numero-passo) 
+
+
 return(
- <Text style={estilo.fontG}>
-    
- </Text>
+    <>
+ <Text style={estilo.fontG}> {numero} </Text>
+ <Button title="+" onPress={inc} />
+ <Button title="-" onPress={dec} />
+ </> 
 )
 }
