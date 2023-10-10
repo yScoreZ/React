@@ -12,9 +12,9 @@ import Botao from './Components/Botao';
 export default function App() { 
   return (
     <SafeAreaView style={styles.container}>
-      <Botao/>
       
 
+      <Botao/>
       
       {/*<Titulo principal="Titulo" secundario="Subtitulo"/>
       <Aleatorio min={1} max={60}/>
