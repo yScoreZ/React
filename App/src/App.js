@@ -8,7 +8,7 @@ import Aleatorio from './Components/Aleatorio';
 import Titulo from './Components/Titulo';*/}
 
 
-import Contador from './Components/Botao';
+import Contador from './Components/Contador';
 
 
 export default function App() { 
